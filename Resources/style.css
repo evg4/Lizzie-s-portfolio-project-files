@@ -217,6 +217,12 @@ button:active {
   text-align: center;
 }
 
+#instructions-above {
+  padding: 20px;
+  text-align: center;
+  display: none;
+}
+
 .preview-box {
   width: 75%;
   border: 3px solid black;
@@ -360,6 +366,14 @@ button:active {
 @media only screen and (max-width: 720px) {
   .projects-page {
     flex-wrap: wrap;
+  }
+
+  #instructions {
+    display: none;
+  }
+
+  #instructions-above {
+    display: inline;
   }
 
   .buttons {

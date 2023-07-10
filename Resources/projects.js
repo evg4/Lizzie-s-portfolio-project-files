@@ -1,4 +1,5 @@
 let instructions = document.getElementById("instructions");
+let instructionsAbove = document.getElementById("instructions-above");
 let salsaButton = document.getElementById("salsa-button");
 let salsaPreview = document.getElementById("preview-salsa");
 let coloursButton = document.getElementById("colours-button");
@@ -28,8 +29,9 @@ let surveyPreview = document.getElementById("preview-survey");
 
 function resetAll() {
   //display
-  salsaPreview.style.display = "none";
   instructions.style.display = "none";
+  instructionsAbove.style.display = "none";
+  salsaPreview.style.display = "none";
   coloursPreview.style.display = "none";
   designPreview.style.display = "none";
   spanishPreview.style.display = "none";
