@@ -29,7 +29,8 @@ h1 {
 }
 
 h2 {
-  font-family: "brush script mt", "Lucida Sans";
+  font-family: "brush script mt", "Lucida Sans", "Lucida Sans Regular",
+    "Lucida Grande", "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
   font-size: 60px;
 }
 
