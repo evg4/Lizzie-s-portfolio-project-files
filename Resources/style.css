@@ -1,0 +1,384 @@
+* {
+  box-sizing: border-box;
+  /*border: 1px solid green; */
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+}
+
+body {
+  background-color: white;
+  margin: 0;
+}
+
+header {
+  background-color: rgb(228, 151, 151);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px;
+  position: fixed;
+  height: 100px;
+  width: 100%;
+  z-index: 1;
+  border-bottom: 1px solid black;
+}
+
+h1 {
+  font-size: 70px;
+  color: black;
+}
+
+h2 {
+  font-family: "brush script mt";
+  font-size: 60px;
+}
+
+.center {
+  text-align: center;
+  margin: 0;
+}
+
+header a {
+  font-size: 20px;
+  color: black;
+}
+
+h2,
+h3,
+p,
+li {
+  color: black;
+}
+
+a:hover {
+  text-decoration: none;
+}
+
+a:active {
+  opacity: 50%;
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+  margin: 10px;
+}
+
+nav li {
+  padding: 10px;
+}
+
+main {
+  position: relative;
+  top: 100px;
+}
+
+#top {
+  background-color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  max-width: 80%;
+  margin: 0 auto;
+}
+
+.about {
+  margin: 30px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  max-width: 50%;
+  min-width: 350px;
+}
+
+.about h2 {
+  margin: 0;
+}
+
+.photo-1 {
+  margin: 30px;
+  display: flex;
+  justify-content: center;
+  max-width: 50%;
+  min-width: 350px;
+}
+
+.photo-1 img {
+  width: 100%;
+  max-height: 560px;
+  border: 3px solid black;
+  border-radius: 4px;
+}
+
+#bottom {
+  background-color: rgb(235, 203, 203);
+}
+
+#bottom h2,
+#bottom p {
+  padding: 10px;
+  margin: 10px;
+}
+
+footer {
+  display: flex;
+  padding: 10px;
+  position: relative;
+  top: 90px;
+  border-top: 1px solid black;
+}
+
+/* Courses page */
+
+#courses {
+  max-width: 1200px;
+  margin: 10px auto;
+  padding: 10px;
+}
+
+#courses ul {
+  list-style: none;
+}
+
+#courses h3,
+#courses h4 {
+  padding: 10px;
+  margin: 10px;
+}
+
+.course-info ul {
+  list-style: none;
+}
+
+.course-name {
+  background-color: rgb(235, 203, 203);
+}
+
+.module-name {
+  background-color: rgba(235, 203, 203, 50%);
+}
+
+.course-name,
+.module-name {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.course-info,
+.module-info,
+.less-info {
+  display: none;
+}
+
+.more-info:hover,
+.less-info:hover {
+  cursor: pointer;
+  text-decoration: underline;
+}
+
+/* Projects page */
+
+.projects-page {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.buttons {
+  width: 25%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 10px;
+}
+
+button {
+  width: 150px;
+  /*height: auto;*/
+  margin: 5px;
+  font-size: 15px;
+  padding: 5px;
+  background-color: rgb(228, 151, 151);
+  border-radius: 4px;
+}
+
+button:hover {
+  opacity: 0.5;
+  cursor: pointer;
+}
+
+button:active {
+  opacity: 0.5;
+}
+
+#instructions {
+  padding: 20px;
+  text-align: center;
+}
+
+.preview-box {
+  width: 75%;
+  border: 3px solid black;
+  border-radius: 4px;
+  margin: 20px;
+  padding: 5px;
+  height: 750px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#preview-salsa,
+#preview-colours,
+#preview-design-system,
+#preview-spanish,
+#preview-superfoods-1,
+#preview-superfoods-2,
+#preview-green-consulting,
+#preview-meet-the-team,
+#preview-stammtisch-sundays,
+#preview-belles-bakery,
+#preview-colour-changer,
+#preview-survey {
+  display: none;
+  width: 100%;
+}
+
+.preview-img {
+  background-color: white;
+  margin-top: 5px;
+}
+
+.preview-img img {
+  max-height: 450px;
+  margin: 0 auto;
+  display: block;
+  max-width: 100%;
+}
+
+/*#smaller {
+  height: 350px;
+  margin: 0 auto;
+  display: block;
+}*/
+
+.text {
+  padding: 10px;
+  line-height: 25px;
+}
+
+/* Contact page */
+
+#contact {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+#contact p {
+  width: 400px;
+  text-align: center;
+}
+
+#photo-2 img {
+  width: 400px;
+  border: 3px solid black;
+  border-radius: 4px;
+  margin: 10px;
+}
+
+.all-icons {
+  display: flex;
+  align-items: center;
+}
+
+.linkedin {
+  height: 50px;
+}
+
+.twitter {
+  height: 50px;
+}
+
+.shecodes {
+  height: 60px;
+}
+
+.codecademy {
+  height: 50px;
+  padding: 7px;
+}
+
+.github {
+  height: 50px;
+  padding: 5px;
+}
+
+.filler {
+  height: 100px;
+}
+
+/* Media queries */
+
+@media only screen and (max-width: 985px) {
+  h1 {
+    font-size: 50px;
+  }
+
+  #top {
+    flex-wrap: wrap;
+  }
+
+  .about {
+    max-width: 100%;
+  }
+
+  .about {
+    text-align: center;
+  }
+
+  #courses h3 {
+    font-size: 15px;
+  }
+}
+
+@media only screen and (max-width: 830px) {
+  h1 {
+    font-size: 30px;
+  }
+  header a {
+    font-size: 16px;
+  }
+
+  .overflow {
+    display: none;
+  }
+}
+
+@media only screen and (max-width: 720px) {
+  .projects-page {
+    flex-wrap: wrap;
+  }
+
+  .buttons {
+    width: 100%;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  .projects-page h2 {
+    width: 100%;
+  }
+  button {
+    height: 40px;
+    width: auto;
+    font-size: 13px;
+  }
+
+  .overflow-2 {
+    display: none;
+  }
+}
