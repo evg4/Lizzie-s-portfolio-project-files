@@ -114,17 +114,30 @@ main {
   background-color: rgb(235, 203, 203);
 }
 
-#bottom h2,
-#bottom p {
+.background h2,
+.background p {
   padding: 10px;
   margin: 10px;
+}
+
+.background h2 {
+  text-align: center;
+}
+
+.columns {
+  display: flex;
+}
+
+.col-1,
+.col-2 {
+  max-width: 50%;
 }
 
 footer {
   display: flex;
   padding: 10px;
   position: relative;
-  top: 90px;
+  top: 100px;
   border-top: 1px solid black;
 }
 
@@ -337,6 +350,15 @@ button:active {
 
   .about {
     text-align: center;
+  }
+
+  .columns {
+    display: inline-block;
+  }
+
+  .col-1,
+  .col-2 {
+    max-width: 100%;
   }
 
   #courses h3 {
