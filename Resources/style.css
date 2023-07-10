@@ -429,6 +429,10 @@ button:active {
     height: 150px;
   }
 
+  h2 {
+    font-size: 40px;
+  }
+
   main {
     top: 150px;
   }
