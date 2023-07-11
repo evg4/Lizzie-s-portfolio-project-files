@@ -20,7 +20,7 @@ header {
   height: 100px;
   width: 100%;
   z-index: 1;
-  border-bottom: 1px solid black;
+  border-bottom: 3px solid black;
 }
 
 h1 {
@@ -140,7 +140,7 @@ footer {
   padding: 10px;
   position: relative;
   top: 100px;
-  border-top: 1px solid black;
+  border-top: 3px solid black;
 }
 
 /* Courses page */
