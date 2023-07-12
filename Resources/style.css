@@ -155,6 +155,10 @@ footer {
   list-style: none;
 }
 
+.main-ul {
+  padding: 0;
+}
+
 #courses h3,
 #courses h4 {
   padding: 10px;
