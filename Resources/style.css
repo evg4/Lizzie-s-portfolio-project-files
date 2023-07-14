@@ -147,6 +147,7 @@ footer {
 
 #courses {
   max-width: 1200px;
+  min-height: 862px;
   margin: 10px auto;
   padding: 10px;
 }
@@ -182,18 +183,15 @@ footer {
 }
 
 .course-info,
-.module-info,
-.less-info {
+.module-info {
   display: none;
 }
 
-.more-info,
-.less-info {
+.more-info {
   font-size: larger;
 }
 
-.more-info:hover,
-.less-info:hover {
+.more-info:hover {
   cursor: pointer;
   text-shadow: 0px 0px 15px black;
   transform: scale(1.3, 1.3);
@@ -368,6 +366,10 @@ button:active {
   .col-1,
   .col-2 {
     max-width: 100%;
+  }
+
+  #courses {
+    min-height: none;
   }
 }
 
