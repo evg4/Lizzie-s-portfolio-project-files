@@ -199,6 +199,11 @@ footer {
 
 /* Projects page */
 
+.extra-instructions {
+  text-align: center;
+  display: none;
+}
+
 .projects-page {
   display: flex;
   justify-content: center;
@@ -249,11 +254,11 @@ button:active {
 
 .preview-box {
   width: 75%;
+  height: 700px;
   border: 3px solid black;
   border-radius: 4px;
   margin: 20px;
   padding: 5px;
-  height: 750px;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -390,6 +395,14 @@ button:active {
 @media only screen and (max-width: 720px) {
   .projects-page {
     flex-wrap: wrap;
+  }
+
+  .extra-instructions {
+    display: block;
+  }
+
+  .preview-box {
+    height: auto;
   }
 
   #instructions {
