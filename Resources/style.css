@@ -1,6 +1,6 @@
 * {
   box-sizing: border-box;
-  /*border: 1px solid green; */
+
   font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
     "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
 }
@@ -220,6 +220,11 @@ button {
   padding: 5px;
   background-color: rgb(228, 151, 151);
   border-radius: 4px;
+  color: black;
+  border-width: 2px;
+  border-style: outset;
+  border-color: buttonborder;
+  border-image: initial;
 }
 
 button:hover {
