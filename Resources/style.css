@@ -228,7 +228,7 @@ button {
   color: black;
   border-width: 2px;
   border-style: outset;
-  border-color: buttonborder;
+  border-color: grey black black grey;
   border-image: initial;
 }
 
