@@ -1,6 +1,0 @@
-header and footer colour: #ffcab0
-main background color: #ffebbb
-second background colour:#fdffcd
-main font color: FIND NAVY
-
-color accent: #e0ffcd
