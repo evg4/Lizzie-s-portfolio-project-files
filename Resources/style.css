@@ -202,6 +202,7 @@ footer {
 .extra-instructions {
   text-align: center;
   display: none;
+  padding: 5px;
 }
 
 .projects-page {
@@ -275,21 +276,29 @@ button:active {
 #preview-stammtisch-sundays,
 #preview-belles-bakery,
 #preview-colour-changer,
-#preview-survey {
+#preview-survey,
+#preview-hat {
   display: none;
   width: 100%;
 }
 
-.preview-img {
+.preview-img,
+.preview-imgs {
   background-color: white;
-  margin-top: 5px;
+  margin: 5px auto;
 }
 
 .preview-img img {
-  max-height: 450px;
+  max-height: 410px;
   margin: 0 auto;
   display: block;
   max-width: 100%;
+}
+
+.preview-imgs img {
+  margin: 0 auto;
+  display: inline;
+  max-width: 45%;
 }
 
 .text {
