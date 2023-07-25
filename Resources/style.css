@@ -277,7 +277,8 @@ button:active {
 #preview-belles-bakery,
 #preview-colour-changer,
 #preview-survey,
-#preview-hat {
+#preview-hat,
+#preview-shapes {
   display: none;
   width: 100%;
 }
