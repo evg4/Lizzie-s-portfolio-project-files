@@ -278,7 +278,8 @@ button:active {
 #preview-colour-changer,
 #preview-survey,
 #preview-hat,
-#preview-shapes {
+#preview-shapes,
+#preview-quizzes {
   display: none;
   width: 100%;
 }

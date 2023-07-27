@@ -26,11 +26,12 @@ let colourChangerButton = document.getElementById("colour-changer-button");
 let colourChangerPreview = document.getElementById("preview-colour-changer");
 let surveyButton = document.getElementById("survey-button");
 let surveyPreview = document.getElementById("preview-survey");
-
 let hatButton = document.getElementById("hat-button");
 let hatPreview = document.getElementById("preview-hat");
 let shapesButton = document.getElementById("shapes-button");
 let shapesPreview = document.getElementById("preview-shapes");
+let quizzesButton = document.getElementById("quizzes-button");
+let quizzesPreview = document.getElementById("preview-quizzes");
 
 function resetAll() {
   //display
@@ -50,6 +51,7 @@ function resetAll() {
   surveyPreview.style.display = "none";
   hatPreview.style.display = "none";
   shapesPreview.style.display = "none";
+  quizzesPreview.style.display = "none";
   //buttons
   salsaButton.style.transform = "scale(1)";
   coloursButton.style.transform = "scale(1)";
@@ -65,6 +67,7 @@ function resetAll() {
   surveyButton.style.transform = "scale(1)";
   hatButton.style.transform = "scale(1)";
   shapesButton.style.transform = "scale(1)";
+  quizzesButton.style.transform = "scale(1)";
 }
 
 function showSalsa() {
@@ -151,6 +154,12 @@ function showShapes() {
   shapesButton.style.transform = "scale(1.1)";
 }
 
+function showQuizzes() {
+  resetAll();
+  quizzesPreview.style.display = "block";
+  quizzesButton.style.transform = "scale(1.1)";
+}
+
 salsaButton.addEventListener("click", showSalsa);
 coloursButton.addEventListener("click", showColours);
 designButton.addEventListener("click", showDesign);
@@ -165,3 +174,4 @@ colourChangerButton.addEventListener("click", showColourChanger);
 surveyButton.addEventListener("click", showSurvey);
 hatButton.addEventListener("click", showHat);
 shapesButton.addEventListener("click", showShapes);
+quizzesButton.addEventListener("click", showQuizzes);
