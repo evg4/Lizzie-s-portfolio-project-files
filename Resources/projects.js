@@ -159,4 +159,6 @@ I have used the resetAll() before toggleDisplay.
 However, this means that the toggle element doesn't work because, 
 upon a click, everything is always being reset to "none" 
 so clicking will then always result in "block". 
-Can't yet think of a way round this? */
+Can't yet think of a way round this? 
+Also I'm happy with this functionality - it just feels like a 
+"wrong" use of the function. */
