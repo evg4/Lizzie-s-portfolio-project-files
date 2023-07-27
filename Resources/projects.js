@@ -1,3 +1,5 @@
+import { toggleDisplay } from "./Modules/dom-functions.js";
+
 let instructions = document.getElementById("instructions");
 let instructionsAbove = document.getElementById("instructions-above");
 let salsaButton = document.getElementById("salsa-button");
@@ -32,6 +34,12 @@ let shapesButton = document.getElementById("shapes-button");
 let shapesPreview = document.getElementById("preview-shapes");
 let quizzesButton = document.getElementById("quizzes-button");
 let quizzesPreview = document.getElementById("preview-quizzes");
+
+function scaleButton(buttonElement) {
+  if (buttonElement.style.transform === "scale(1)") {
+    buttonElement.style.transform = "scale(1.1)";
+  }
+}
 
 function resetAll() {
   //display
@@ -70,108 +78,85 @@ function resetAll() {
   quizzesButton.style.transform = "scale(1)";
 }
 
-function showSalsa() {
+salsaButton.addEventListener("click", () => {
   resetAll();
-  salsaPreview.style.display = "block";
-  salsaButton.style.transform = "scale(1.1)";
-}
-
-function showColours() {
+  toggleDisplay(salsaPreview);
+  scaleButton(salsaButton);
+});
+coloursButton.addEventListener("click", () => {
   resetAll();
-  coloursPreview.style.display = "block";
-  coloursButton.style.transform = "scale(1.1)";
-}
-
-function showDesign() {
+  toggleDisplay(coloursPreview);
+  scaleButton(coloursButton);
+});
+designButton.addEventListener("click", () => {
   resetAll();
-  designPreview.style.display = "block";
-  designButton.style.transform = "scale(1.1)";
-}
-
-function showSpanish() {
+  toggleDisplay(designPreview);
+  scaleButton(designButton);
+});
+spanishButton.addEventListener("click", () => {
   resetAll();
-  spanishPreview.style.display = "block";
-  spanishButton.style.transform = "scale(1.1)";
-}
-
-function showSuperfoods1() {
+  toggleDisplay(spanishPreview);
+  scaleButton(spanishButton);
+});
+superfoods1Button.addEventListener("click", () => {
   resetAll();
-  superfoods1Preview.style.display = "block";
-  superfoods1Button.style.transform = "scale(1.1)";
-}
-
-function showSuperfoods2() {
+  toggleDisplay(superfoods1Preview);
+  scaleButton(superfoods1Button);
+});
+superfoods2Button.addEventListener("click", () => {
   resetAll();
-  superfoods2Preview.style.display = "block";
-  superfoods2Button.style.transform = "scale(1.1)";
-}
-
-function showGreenConsulting() {
+  toggleDisplay(superfoods2Preview);
+  scaleButton(superfoods2Button);
+});
+greenConsultingButton.addEventListener("click", () => {
   resetAll();
-  greenConsultingPreview.style.display = "block";
-  greenConsultingButton.style.transform = "scale(1.1)";
-}
-
-function showMeetTheTeam() {
+  toggleDisplay(greenConsultingPreview);
+  scaleButton(greenConsultingButton);
+});
+meetTheTeamButton.addEventListener("click", () => {
   resetAll();
-  meetTheTeamPreview.style.display = "block";
-  meetTheTeamButton.style.transform = "scale(1.1)";
-}
-
-function showStammtisch() {
+  toggleDisplay(meetTheTeamPreview);
+  scaleButton(meetTheTeamButton);
+});
+stammtischButton.addEventListener("click", () => {
   resetAll();
-  stammtischPreview.style.display = "block";
-  stammtischButton.style.transform = "scale(1.1)";
-}
-
-function showBakery() {
+  toggleDisplay(stammtischPreview);
+  scaleButton(stammtischButton);
+});
+bakeryButton.addEventListener("click", () => {
   resetAll();
-  bakeryPreview.style.display = "block";
-  bakeryButton.style.transform = "scale(1.1)";
-}
-
-function showColourChanger() {
+  toggleDisplay(bakeryPreview);
+  scaleButton(bakeryButton);
+});
+colourChangerButton.addEventListener("click", () => {
   resetAll();
-  colourChangerPreview.style.display = "block";
-  colourChangerButton.style.transform = "scale(1.1)";
-}
-
-function showSurvey() {
+  toggleDisplay(colourChangerPreview);
+  scaleButton(colourChangerButton);
+});
+surveyButton.addEventListener("click", () => {
   resetAll();
-  surveyPreview.style.display = "block";
-  surveyButton.style.transform = "scale(1.1)";
-}
-
-function showHat() {
+  toggleDisplay(surveyPreview);
+  scaleButton(surveyButton);
+});
+hatButton.addEventListener("click", () => {
   resetAll();
-  hatPreview.style.display = "block";
-  hatButton.style.transform = "scale(1.1)";
-}
-
-function showShapes() {
+  toggleDisplay(hatPreview);
+  scaleButton(hatButton);
+});
+shapesButton.addEventListener("click", () => {
   resetAll();
-  shapesPreview.style.display = "block";
-  shapesButton.style.transform = "scale(1.1)";
-}
-
-function showQuizzes() {
+  toggleDisplay(shapesPreview);
+  scaleButton(shapesButton);
+});
+quizzesButton.addEventListener("click", () => {
   resetAll();
-  quizzesPreview.style.display = "block";
-  quizzesButton.style.transform = "scale(1.1)";
-}
+  toggleDisplay(quizzesPreview);
+  scaleButton(quizzesButton);
+});
 
-salsaButton.addEventListener("click", showSalsa);
-coloursButton.addEventListener("click", showColours);
-designButton.addEventListener("click", showDesign);
-spanishButton.addEventListener("click", showSpanish);
-superfoods1Button.addEventListener("click", showSuperfoods1);
-superfoods2Button.addEventListener("click", showSuperfoods2);
-greenConsultingButton.addEventListener("click", showGreenConsulting);
-meetTheTeamButton.addEventListener("click", showMeetTheTeam);
-stammtischButton.addEventListener("click", showStammtisch);
-bakeryButton.addEventListener("click", showBakery);
-colourChangerButton.addEventListener("click", showColourChanger);
-surveyButton.addEventListener("click", showSurvey);
-hatButton.addEventListener("click", showHat);
-shapesButton.addEventListener("click", showShapes);
-quizzesButton.addEventListener("click", showQuizzes);
+/* Because I only want one preview box to be displayed at a time, 
+I have used the resetAll() before toggleDisplay. 
+However, this means that the toggle element doesn't work because, 
+upon a click, everything is always being reset to "none" 
+so clicking will then always result in "block". 
+Can't yet think of a way round this? */

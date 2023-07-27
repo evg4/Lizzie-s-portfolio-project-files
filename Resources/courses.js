@@ -1,3 +1,5 @@
+import { toggleDisplay } from "./Modules/dom-functions.js";
+
 let moreInfoButtonCourse1 = document.getElementById(
   "more-info-button-course-1"
 );
@@ -32,91 +34,43 @@ let module3Info = document.getElementById("module-3");
 let module4Info = document.getElementById("module-4");
 let module5Info = document.getElementById("module-5");
 
-function toggleDisplayCourse1() {
-  if (course1Info.style.display === "block") {
-    course1Info.style.display = "none";
-    moreInfoButtonCourse1.innerHTML = "+";
+function toggleSign(sign) {
+  if (sign.innerHTML === "+") {
+    sign.innerHTML = "–";
   } else {
-    course1Info.style.display = "block";
-    moreInfoButtonCourse1.innerHTML = "–";
+    sign.innerHTML = "+";
   }
 }
 
-function toggleDisplayCourse2() {
-  if (course2Info.style.display === "block") {
-    course2Info.style.display = "none";
-    moreInfoButtonCourse2.innerHTML = "+";
-  } else {
-    course2Info.style.display = "block";
-    moreInfoButtonCourse2.innerHTML = "–";
-  }
-}
-
-function toggleDisplayCourse3() {
-  if (course3Info.style.display === "block") {
-    course3Info.style.display = "none";
-    moreInfoButtonCourse3.innerHTML = "+";
-  } else {
-    course3Info.style.display = "block";
-    moreInfoButtonCourse3.innerHTML = "–";
-  }
-}
-
-function toggleDisplayModule1() {
-  if (module1Info.style.display === "block") {
-    module1Info.style.display = "none";
-    moreInfoButtonModule1.innerHTML = "+";
-  } else {
-    module1Info.style.display = "block";
-    moreInfoButtonModule1.innerHTML = "–";
-  }
-}
-
-function toggleDisplayModule2() {
-  if (module2Info.style.display === "block") {
-    module2Info.style.display = "none";
-    moreInfoButtonModule2.innerHTML = "+";
-  } else {
-    module2Info.style.display = "block";
-    moreInfoButtonModule2.innerHTML = "–";
-  }
-}
-
-function toggleDisplayModule3() {
-  if (module3Info.style.display === "block") {
-    module3Info.style.display = "none";
-    moreInfoButtonModule3.innerHTML = "+";
-  } else {
-    module3Info.style.display = "block";
-    moreInfoButtonModule3.innerHTML = "–";
-  }
-}
-
-function toggleDisplayModule4() {
-  if (module4Info.style.display === "block") {
-    module4Info.style.display = "none";
-    moreInfoButtonModule4.innerHTML = "+";
-  } else {
-    module4Info.style.display = "block";
-    moreInfoButtonModule4.innerHTML = "–";
-  }
-}
-
-function toggleDisplayModule5() {
-  if (module5Info.style.display === "block") {
-    module5Info.style.display = "none";
-    moreInfoButtonModule5.innerHTML = "+";
-  } else {
-    module5Info.style.display = "block";
-    moreInfoButtonModule5.innerHTML = "–";
-  }
-}
-
-moreInfoButtonCourse1.addEventListener("click", toggleDisplayCourse1);
-moreInfoButtonCourse2.addEventListener("click", toggleDisplayCourse2);
-moreInfoButtonCourse3.addEventListener("click", toggleDisplayCourse3);
-moreInfoButtonModule1.addEventListener("click", toggleDisplayModule1);
-moreInfoButtonModule2.addEventListener("click", toggleDisplayModule2);
-moreInfoButtonModule3.addEventListener("click", toggleDisplayModule3);
-moreInfoButtonModule4.addEventListener("click", toggleDisplayModule4);
-moreInfoButtonModule5.addEventListener("click", toggleDisplayModule5);
+moreInfoButtonCourse1.addEventListener("click", () => {
+  toggleDisplay(course1Info);
+  toggleSign(moreInfoButtonCourse1);
+});
+moreInfoButtonCourse2.addEventListener("click", () => {
+  toggleDisplay(course2Info);
+  toggleSign(moreInfoButtonCourse2);
+});
+moreInfoButtonCourse3.addEventListener("click", () => {
+  toggleDisplay(course3Info);
+  toggleSign(moreInfoButtonCourse3);
+});
+moreInfoButtonModule1.addEventListener("click", () => {
+  toggleDisplay(module1Info);
+  toggleSign(moreInfoButtonModule1);
+});
+moreInfoButtonModule2.addEventListener("click", () => {
+  toggleDisplay(module2Info);
+  toggleSign(moreInfoButtonModule2);
+});
+moreInfoButtonModule3.addEventListener("click", () => {
+  toggleDisplay(module3Info);
+  toggleSign(moreInfoButtonModule3);
+});
+moreInfoButtonModule4.addEventListener("click", () => {
+  toggleDisplay(module4Info);
+  toggleSign(moreInfoButtonModule4);
+});
+moreInfoButtonModule5.addEventListener("click", () => {
+  toggleDisplay(module5Info);
+  toggleSign(moreInfoButtonModule5);
+});
