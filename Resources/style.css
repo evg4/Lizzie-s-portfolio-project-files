@@ -279,7 +279,8 @@ button:active {
 #preview-survey,
 #preview-hat,
 #preview-shapes,
-#preview-quizzes {
+#preview-quizzes,
+#preview-rhyme {
   display: none;
   width: 100%;
 }
