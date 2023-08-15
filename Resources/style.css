@@ -280,7 +280,8 @@ button:active {
 #preview-hat,
 #preview-shapes,
 #preview-quizzes,
-#preview-rhyme {
+#preview-rhyme,
+#preview-food {
   display: none;
   width: 100%;
 }
