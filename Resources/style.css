@@ -281,7 +281,8 @@ button:active {
 #preview-shapes,
 #preview-quizzes,
 #preview-rhyme,
-#preview-food {
+#preview-food,
+#preview-friend {
   display: none;
   width: 100%;
 }
