@@ -40,6 +40,8 @@ let foodButton = document.getElementById("food-button");
 let foodPreview = document.getElementById("preview-food");
 let friendButton = document.getElementById("friend-button");
 let friendPreview = document.getElementById("preview-friend");
+let libraryButton = document.getElementById("library-button");
+let libraryPreview = document.getElementById("preview-library");
 
 function scaleButton(buttonElement) {
   if (buttonElement.style.transform === "scale(1)") {
@@ -69,6 +71,7 @@ function resetAll() {
   rhymePreview.style.display = "none";
   foodPreview.style.display = "none";
   friendPreview.style.display = "none";
+  libraryPreview.style.display = "none";
   //buttons
   salsaButton.style.transform = "scale(1)";
   coloursButton.style.transform = "scale(1)";
@@ -88,6 +91,7 @@ function resetAll() {
   rhymeButton.style.transform = "scale(1)";
   foodButton.style.transform = "scale(1)";
   friendButton.style.transform = "scale(1)";
+  libraryButton.style.transform = "scale(1)";
 }
 
 salsaButton.addEventListener("click", () => {
@@ -179,6 +183,11 @@ friendButton.addEventListener("click", () => {
   resetAll();
   toggleDisplay(friendPreview);
   scaleButton(friendButton);
+});
+libraryButton.addEventListener("click", () => {
+  resetAll();
+  toggleDisplay(libraryPreview);
+  scaleButton(libraryButton);
 });
 
 /* Because I only want one preview box to be displayed at a time, 
