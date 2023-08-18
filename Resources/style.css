@@ -209,7 +209,6 @@ footer {
   display: flex;
   justify-content: center;
   align-items: center;
-  border: 1px solid green;
 }
 
 .buttons {
@@ -221,7 +220,6 @@ footer {
   align-items: center;
   justify-content: center;
   margin: 10px;
-  border: 1px solid red;
 }
 
 button {
