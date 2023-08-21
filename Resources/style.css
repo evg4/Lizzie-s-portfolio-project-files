@@ -287,7 +287,9 @@ button:active {
 #preview-rhyme,
 #preview-food,
 #preview-friend,
-#preview-library {
+#preview-library,
+#preview-quizmember,
+#preview-timer {
   display: none;
   width: 100%;
 }
