@@ -289,7 +289,8 @@ button:active {
 #preview-friend,
 #preview-library,
 #preview-quizmember,
-#preview-timer {
+#preview-timer,
+#preview-jammming {
   display: none;
   width: 100%;
 }
@@ -305,6 +306,12 @@ button:active {
   margin: 0 auto;
   display: block;
   max-width: 100%;
+}
+
+.preview-img video {
+  margin: 0 auto;
+  max-width: 100%;
+  max-height: 500px;
 }
 
 .preview-imgs img {
