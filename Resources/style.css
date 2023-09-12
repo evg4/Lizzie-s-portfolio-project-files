@@ -310,8 +310,9 @@ button:active {
 
 .preview-img video {
   margin: 0 auto;
+  display: block;
   max-width: 100%;
-  max-height: 500px;
+  max-height: 410px;
 }
 
 .preview-imgs img {
