@@ -290,7 +290,8 @@ button:active {
 #preview-library,
 #preview-quizmember,
 #preview-timer,
-#preview-jammming {
+#preview-jammming,
+#preview-blog {
   display: none;
   width: 100%;
 }
