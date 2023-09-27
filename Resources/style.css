@@ -291,7 +291,8 @@ button:active {
 #preview-quizmember,
 #preview-timer,
 #preview-jammming,
-#preview-blog {
+#preview-blog,
+#preview-planner {
   display: none;
   width: 100%;
 }
@@ -420,12 +421,12 @@ button:active {
   }
 
   button {
-    width: 80px;
+    width: 90px;
     font-size: 12px;
   }
 }
 
-@media only screen and (max-width: 830px) {
+@media only screen and (max-width: 880px) {
   h1 {
     font-size: 30px;
   }
