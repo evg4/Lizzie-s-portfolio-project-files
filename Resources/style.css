@@ -292,7 +292,8 @@ button:active {
 #preview-timer,
 #preview-jammming,
 #preview-blog,
-#preview-planner {
+#preview-planner,
+#preview-packing {
   display: none;
   width: 100%;
 }
