@@ -293,7 +293,8 @@ button:active {
 #preview-jammming,
 #preview-blog,
 #preview-planner,
-#preview-packing {
+#preview-packing,
+#preview-flashcards {
   display: none;
   width: 100%;
 }
