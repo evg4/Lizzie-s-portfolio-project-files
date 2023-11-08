@@ -294,7 +294,8 @@ button:active {
 #preview-blog,
 #preview-planner,
 #preview-packing,
-#preview-flashcards {
+#preview-flashcards,
+#preview-reddit {
   display: none;
   width: 100%;
 }

@@ -56,6 +56,8 @@ let packingButton = document.getElementById("packing-button");
 let packingPreview = document.getElementById("preview-packing");
 let flashcardsButton = document.getElementById("flashcards-button");
 let flashcardsPreview = document.getElementById("preview-flashcards");
+let redditButton = document.getElementById("reddit-button");
+let redditPreview = document.getElementById("preview-reddit");
 
 function scaleButton(buttonElement) {
   if (buttonElement.style.transform === "scale(1)") {
@@ -93,6 +95,7 @@ function resetAll() {
   plannerPreview.style.display = "none";
   packingPreview.style.display = "none";
   flashcardsPreview.style.display = "none";
+  redditPreview.style.display = "none";
   //buttons
   salsaButton.style.transform = "scale(1)";
   coloursButton.style.transform = "scale(1)";
@@ -120,6 +123,7 @@ function resetAll() {
   plannerButton.style.transform = "scale(1)";
   packingButton.style.transform = "scale(1)";
   flashcardsButton.style.transform = "scale(1)";
+  redditButton.style.transform = "scale(1)";
 }
 
 salsaButton.addEventListener("click", () => {
@@ -257,6 +261,12 @@ flashcardsButton.addEventListener("click", () => {
   resetAll();
   toggleDisplay(flashcardsPreview);
   scaleButton(flashcardsButton);
+});
+
+redditButton.addEventListener("click", () => {
+  resetAll();
+  toggleDisplay(redditPreview);
+  scaleButton(redditButton);
 });
 
 /* Because I only want one preview box to be displayed at a time, 
