@@ -5,7 +5,7 @@ This portfolio was built as part of the Codecademy Front-End Engineer path using
 Now that I have learnt more, I would like to rebuild this using React as I think it would be more efficient. For example, in the current implementation, every time I add a new button and project to the "Projects" page, I manually copy and paste code and make relevant changes. In React, I could do this by adding the data in an array, and mapping over the array to render duplicate elements.
 I would also like to change the current "Projects" page to contain only complete projects. At the moment, there are some things in there which are just skills-practising rather than a complete app/website. I would like to move these things onto a "Blog" page, so I can still log my learnings, but keep full-size projects separate.
 ## How to use
-This website can be viewed at https://evg4.github.io/Portfolio/index.html
+This website can be viewed at https://evg4.github.io/
 ## Credits
 This was completed as part of the Codecademy Front-End Engineer path. I learnt everything I needed from their courses.
 ## Licence
